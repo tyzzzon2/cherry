@@ -1,3 +1,11 @@
 <?php
+include ('additionalScriptThatIsNotRedundantButContainsBaseFunctionality.php');
 
-print 'Hello World!';
+$people = array("Vasya", "Olya", "Nastya", "Kakashka");
+$greets = array("hi", "hello", "zdorova", "privetik");
+
+$greetsPeople = createStringsFromArrays($greets, $people);
+
+foreach ($greetsPeople as $value) {
+    print $value;
+}
